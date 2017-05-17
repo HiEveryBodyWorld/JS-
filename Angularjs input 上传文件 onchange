@@ -1,0 +1,11 @@
+<div>
+ <input type="file" class="form-control" id="upload_file" name="upload_file"
+   style="display: none;" onchange="angular.element(this).scope().changeFiles(this)"  multiple>
+ <input type="text" class="form-control" id="upload_file_tmp" name="upload_file_tmp" readonly="readonly" onclick="upload_file.click(); ">
+<button type="button" class="btn btn-primary" id="select_file" onclick="upload_file.click();">浏览
+</button>
+
+
+重点是onchange 这个方法，在这里使用ng-change不起作用。
+
+使用onchange的时候注意angular.element(this).scope().changeFiles(this)这句非常重要。
