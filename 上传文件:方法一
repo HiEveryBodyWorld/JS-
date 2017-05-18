@@ -1,0 +1,34 @@
+ applyForAskCancle.html 
+ 
+ controller.js 6406行代码
+ 
+ 
+ 
+ 
+ <div class="fileinput fileinput-new input-group col-md-12"
+                                                     data-ui-jq="fileinput"
+                                                        >
+                                                    <div style="position: relative;overflow: hidden;">
+                                                        <input type="file" class="form-control" id="upload_file" name="upload_file"
+                                                               style="display: none;" onchange="angular.element(this).scope().changeFiles(this)"  multiple>
+                                                        <input type="text" class="form-control" id="upload_file_tmp" name="upload_file_tmp" style="width: 90%;"
+                                                               readonly="readonly" onclick="upload_file.click(); ">
+                                                        <button type="button" class="btn btn-primary" id="select_file" style="position: absolute;right: 0px;z-index: 900;"
+                                                                onclick="upload_file.click();">选择附件
+                                                        </button>
+                                                        </div>
+                                                       <span class="record-number">支持上传文件格式:txt, pdf,doc,docx,xls,xlsx,png,jpg,dcm,zip,rar,bmp,7zip,jpeg.</span>
+                                                         <span class="record-number">上传文件数量:5</span>
+                                                     <span class="record-number">上传文件大小:10M(单个)</span>
+													<!--<span class="input-group-addon btn btn-default btn-file">
+                                                        <buttun ng-click="openFile()">选择文件</buttun>
+														<input style="display:none" id="fileupload"
+                                                               ng-model="uploadfile" fileread="readFile" name="myfiles"
+                                                               type="file"
+                                                               onchange="angular.element(this).scope().uploaditems(this)"
+                                                               multiple>
+													</span>-->
+                                                </div>
+                                                
+                                                
+                                                
